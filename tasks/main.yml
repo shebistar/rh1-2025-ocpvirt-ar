@@ -12,7 +12,8 @@
 - name: Clone the repo and copy lab script
   ansible.builtin.command: "{{ item }}"
   loop:
-    - sudo git clone https://github.com/opentraining-labs-customizations/rh1-lab17-ocpvirt.git /opt/rh1-lab17-ocpvirt/
+#    - sudo git clone https://github.com/opentraining-labs-customizations/rh1-lab17-ocpvirt.git /opt/rh1-lab17-ocpvirt/
+    - sudo git clone https://github.com/shebistar/rh1-lab17-ocpvirt-instructions.git -b dev /opt/rh1-lab17-ocpvirt/
     - sudo cp /opt/rh1-lab17-ocpvirt/lab /usr/local/bin/
     - sudo chmod +x /usr/local/bin/lab
 
