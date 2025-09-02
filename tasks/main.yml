@@ -49,6 +49,7 @@
       bastion_ssh_password: "{{ common_user_password }}"
       cloud_provider: "{{ cloud_provider }}"
       openshift_api_url: "{{ openshift_api_url }}"
+      ocp4_installer_version: "{{ ocp4_installer_version }}"
   loop: "{{ range(1, num_users + 1) | list }}"
 
 - name: Setting facts so that they will be persisted in the fact cache
