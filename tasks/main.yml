@@ -21,7 +21,7 @@
   ansible.builtin.command: "ansible-galaxy collection install -r /opt/rh1-lab17-ocpvirt/requirements.yml -p /usr/share/ansible/collections/"
 
 - name: Install the kubernetes and passlib
-  ansible.builtin.command: "pip install kubernetes passlib"
+  ansible.builtin.command: "pip install kubernetes==33.1.0 passlib"
 
 - name: Create the users on bastion
   ansible.builtin.user:
